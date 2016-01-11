@@ -5,7 +5,7 @@ import org.scalatest._
 /**
  * Created by zhenghu on 2016/1/11.
  */
-object TypeTest extends FlatSpec with Matchers {
+object RealTest extends FlatSpec with Matchers {
   def main(args: Array[String]) {
 
 //    "The 'greater than' operator" should "function properly" in {

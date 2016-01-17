@@ -8,16 +8,16 @@ object IntervalTest extends FlatSpec with Matchers {
   def main(args: Array[String]): Unit = {
     println(RealLine)
 
-    val A = new Interval(3, 5)
-    val B = new Interval(3, PositiveInfinity)
-    val C = new Interval(NegativeInfinity, 5)
+    val A = new OpenInterval(3, 5)
+    val B = new OpenInterval(3, PositiveInfinity)
+    val C = new OpenInterval(NegativeInfinity, 5)
     println(A)
     println(B)
     println(C)
 
-    var D: Interval = null
+    var D: OpenInterval = null
     try {
-      D = new Interval(PositiveInfinity, NegativeInfinity)
+      D = new OpenInterval(PositiveInfinity, NegativeInfinity)
     } catch {
       case e: IllegalArgumentException => println("Expected exception: " + e)
       case _: Throwable => println("Generic exception!")
